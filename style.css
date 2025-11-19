@@ -469,4 +469,24 @@ body {
 .divya-link:active{
     opacity: 0.6;
     transform: translateY(0.3px);
+
+}
+
+.Gallery {
+  display: grid;
+  gap: 5px;
+  padding: 0; 
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.Gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.Gallery img:hover {
+  transform: scale(1.03);
 }
