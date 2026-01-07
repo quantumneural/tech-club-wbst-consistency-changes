@@ -352,6 +352,7 @@ body {
 /* ------------------- */
 
 .headings-pg2 {
+    cursor:pointer;
     text-align: center;
     color: #C9D1D9;
     font-size: 40px;
@@ -360,7 +361,7 @@ body {
     padding: 20px 0px;
 }
 
-.divya-link::hover{
+.divya-link:hover{
     cursor: pointer;
 }
 
