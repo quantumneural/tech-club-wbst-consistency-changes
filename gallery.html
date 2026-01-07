@@ -6,6 +6,7 @@
     <title>Tech Club</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="fvcn.png" type="image/png">
+
     <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigins>
@@ -75,7 +76,9 @@
             <a href="about.html">About Us</a>
             <a href="events.html">Events</a>
             <a href="gallery.html" class="active">Gallery</a>
-            <a href="clubs.html"><span class = "material-icons-outlined"> help </span></a>            
+            <div class="wrapper" style="display: inline-block; position: relative;">
+                <span class = "material-icons-outlined" onclick = "window.open('clubs.html')"> help </span>
+            </div>
             <div class="wrapper" style="display: inline-block; position: relative;">
                 <span style = "position: relative; top: 2px; font-size: 20px;" class="material-icons-outlined" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=soitechclub.25@gmail.com&su=Hello&body=Hi%2C%20I%20wanted%20to%20contact%20you.', '_blank')">
                     mail
@@ -85,7 +88,7 @@
     </header>
 <div class = "main-container">
     <!-- Content -->
-     <div class="Gallery">
+    <div class="Gallery">
         <img src="IMG_2729.JPG">
         <img src="IMG_2730.JPG">
         <img src="IMG_2731.JPG">
