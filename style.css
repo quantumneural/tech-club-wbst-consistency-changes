@@ -360,6 +360,10 @@ body {
     padding: 20px 0px;
 }
 
+.divya-link::hover{
+    cursor: pointer;
+}
+
 .content-2 {
     font-family: 'Poppins', 'Inter', "sans-serif", 'arial';
     font-size: 20px;
