@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Entrepreneurship Club</title>
+  <title> Entrepreneurship Club </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -50,6 +50,7 @@
       padding: 0 15px;
       text-align: center;
       line-height: 1.2em;
+      font-weight: 550;
     }
 
     .mentors {
@@ -86,10 +87,6 @@
       color: #141414;
     }
 
-    .soi-logo {
-      height: 60px;
-    }
-
     .credts {
       margin-top: 10em;
       background-color: #1E1E1E;
@@ -110,6 +107,25 @@
       border-radius: 50%;
       border: 2px;
     }
+
+    .dev {
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+    }
+
+    .dev::after {
+        font-weight: 550;
+        content: "\2197";
+    }
+
+    .dev:hover {
+        opacity: 0.8;
+        transform: translateY(-1px);
+        text-decoration: underline;
+    }
+
+
   </style>
 </head>
 
@@ -122,18 +138,18 @@
     <h1>Entrepreneurship Club</h1>
   </header>
 
-  <h2 style="color:#1C1C1C; text-align:center;">Hi Everyone,</h2>
+  <h2 style="color: #1C1C1C; text-align: center; font-family: Arial;">Hi Everyone,</h2>
 
   <div class="introtext">
     <h1>“</h1>
     <p class="intro">
-      <b>
+
         The Entrepreneurship Club is a student-driven platform that encourages innovation,
         leadership, and real-world problem solving. We empower students to transform ideas
         into impactful ventures through collaboration, creativity, and hands-on experience.
         By hosting workshops, startup challenges, and community initiatives, the club
         nurtures confidence, responsibility, and an entrepreneurial mindset.
-      </b>
+
     </p>
     <h1>”</h1>
   </div>
@@ -143,35 +159,35 @@
   <div class="mentors">
 
     <div class="mentor">
-      <h2>Chinmayee – President</h2>
+      <h2>Chinmayee | President</h2>
       <p>
-        Hello Everyone,<br>
-
-I am proud to introduce myself as the President of the Entrepreneurship Club. I am passionate about innovation, leadership, and turning ideas into action. I look forward to working with our members to encourage creativity, problem-solving, and entrepreneurial thinking.<br><br>
-
-Warm Regards,<br>Chinmayee
+        I’m proud to step into the role of President for the Entrepreneurship Club. My passion lies in innovation, leadership, and the process of turning ideas into action. I look forward to working with our members to encourage creativity, problem-solving, and entrepreneurial thinking.
+        <br> <br>
+        Warm Regards,
+        <br>
+        Chinmayee
       </p>
     </div>
 
     <div class="mentor">
-      <h2>Manaswin Tiwari – Vice President</h2>
+      <h2>Manaswin | Vice President</h2>
       <p>
-        Hello Everyone,<br>
-
-I am pleased to introduce myself as the Vice President of the Entrepreneurship Club. I am interested in innovation, teamwork, and learning how ideas grow into real solutions. I look forward to supporting the team and contributing to a successful year.<br><br>
-
-Warm Regards,<br>Manaswin
+        As Vice President, I’m excited to dive into the world of innovation and teamwork. I’ve always been interested in learning how raw ideas grow into real-world solutions. I look forward to supporting the team and contributing to a successful year for the club.
+        <br> <br>
+        Warm Regards,
+        <br>
+        Manaswin
       </p>
     </div>
 
     <div class="mentor">
-      <h2>Vaidik – Secretary</h2>
+      <h2>Vaidik | Secretary</h2>
       <p>
-       Hello Everyone,<br>
-
-I am happy to serve as the Secretary of the Entrepreneurship Club. I look forward to helping organize activities, maintain records, and support the team in promoting creativity and entrepreneurial skills. I am excited to learn and grow alongside the club members throughout the year.<br><br>
-
-Warm Regards,<br>Vaidik
+        It’s a pleasure to serve as the Secretary for the Entrepreneurship Club this year. I’ll be focused on organizing our activities and maintaining records while supporting the team in promoting creativity. I am excited to learn and grow alongside all of our members.
+        <br> <br>
+        Warm Regards,
+        <br>
+        Vaidik
       </p>
     </div>
 
@@ -180,12 +196,12 @@ Warm Regards,<br>Vaidik
   <footer class="credts">
     <p>
       Developed by
-      <span onclick="window.open('https://github.com/QuantumNeural')" style="cursor:pointer;">Divyansh</span>
+      <span onclick="window.open('https://github.com/QuantumNeural')" class ="dev">Divyansh</span>
       and
-      <span onclick="window.open('https://github.com/Hamprogrammer')" style="cursor:pointer;">Hamiz</span>
+      <span onclick="window.open('https://github.com/Hamprogrammer')" class ="dev"">Hamiz</span>
     </p>
     <p style="font-size: 0.75rem;">Blueprinted by Vaibhavi and Dhruv</p>
-    <p style="font-size: 0.75rem;">© 2025 School Of India, Tech Club</p>
+    <p style="font-size: 0.75rem;">© 2025 School Of India Tech Club</p>
   </footer>
 
 </body>
