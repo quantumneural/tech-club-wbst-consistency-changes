@@ -477,20 +477,49 @@ body {
 }
 
 .gallery {
-  display: grid;
-  gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 10px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .gallery img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 25px;
-  transition: 0.3s ease;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: 0.3s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.1);
+    transform: scale(1.03);
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 120px 170px;
+    display: flex;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+.glass-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.event-txt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: default;
 }

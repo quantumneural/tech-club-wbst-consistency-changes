@@ -15,87 +15,121 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #7F8CFF, #4DD4FF);
-      margin: 0;
-    }
+    background: #e0f2fe;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b;
+    min-height: 100vh;
+  }
 
-    h1 {
-      color: #0a0a0a;
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-    }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: #38bdf8; 
+    border-bottom: 4px solid #075985;
+  }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      padding: 8px;
-      background-color: #4DD4FF;
-      border: 2px solid #063c46;
-      border-radius: 100px;
-    }
+  header h1 {
+    color: #0c4a6e;
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
 
-    .intro {
-      color: #0c0c0c;
-      font-family: 'Poppins', sans-serif;
-      font-size: 22px;
-      padding: 0px 15px;
-      text-align: center;
-      line-height: 1.4em;
-    }
+  header img {
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid #075985;
+  }
 
-    .mentors {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin: 20px;
-    }
+  .introtext {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 3px solid #0ea5e9; 
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 10px 10px 0px #0ea5e9;
+  }
 
-    .mentor {
-      width: 300px;
-      padding: 40px;
-      text-align: center;
-      border-radius: 100px;
-      border: 2px solid #002b7a;
-    }
+  .intro {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #334155;
+  }
 
-    .mentor img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid #002b7a;
-    }
+  h1.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 50px;
+    color: #0369a1;
+    text-decoration: underline;
+  }
 
-    .mentor h2 {
-      margin: 10px 0 5px;
-      color: #001c54;
-    }
+  .mentors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+  }
 
-    .mentor p {
-      color: #151515;
-      font-family: 'Poppins', sans-serif;
-    }
+  .mentor {
+    background: #f8fafc;
+    width: 280px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #64748b;
+    text-align: center;
+  }
 
-    footer {
-      margin-top: 6rem;
-      background-color: #001c27;
-      padding: 6px;
-      text-align: center;
-      border-top: 1px solid #26323a;
-    }
+  .mentor h2 {
+    color: #0ea5e9;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
 
-    footer p {
-      color: white;
-      font-size: 12px;
-      margin: 6px 0;
-    }
-    header img {
-      width: 80px;
-      border-radius: 50%;
-      border: 2px solid #4CCB7B;
-    }
+  .mentor p {
+    font-size: 0.9rem;
+    color: #475569;
+  }
+
+  .credts {
+    margin-top: 50px;
+    background-color: #0c4a6e;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .credts p {
+    color: white;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .dev {
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+  .dev::after {
+      font-weight: 550;
+      content: "\2197";
+  }
+
+  .dev:hover {
+      opacity: 0.8;
+      transform: translateY(-1px);
+      text-decoration: underline;
+  }
+
   </style>
 </head>
 
@@ -115,11 +149,11 @@
     <h1>”</h1>
   </div>
 
-  <h1>About Us</h1>
+  <h1 class = "section-title">About Us</h1>
   <div class="mentors">
 
     <div class="mentor">
-      <h2> Anirudh– President</h2>
+      <h2> Anirudh | President</h2>
       <p>Hello Everyone,<br>
 
 I am proud to introduce myself as the President of the Science Club. Science inspires curiosity, experimentation, and discovery, and I look forward to working with our members to explore ideas, conduct activities, and make learning exciting and meaningful.<br><br>
@@ -128,7 +162,7 @@ Warm Regards,<br>Anirudh</p>
     </div>
 
     <div class="mentor">
-      <h2>Dishita – Vice President</h2>
+      <h2>Dishita | Vice President</h2>
       <p>Hello Everyone,<br>
 
 I am pleased to introduce myself as the Vice President of the Science Club. I enjoy exploring scientific ideas and working collaboratively to make learning engaging and hands-on. I look forward to supporting the team and contributing to a year of discovery and innovation.<br><br>
@@ -137,7 +171,7 @@ Warm Regards,<br>Dishita</p>
     </div>
 
     <div class="mentor">
-      <h2>Siddharth – Secretary</h2>
+      <h2>Siddharth | Secretary</h2>
       <p>Hello Everyone,<br>
 
 I am happy to serve as the Secretary of the Science Club. I look forward to helping organize activities, maintain records, and support the team in making this a productive and exciting year. I am eager to contribute and work closely with all members.<br><br>
@@ -147,11 +181,16 @@ Warm Regards,<br>Siddharth</p>
 
   </div>
 
-  <footer>
-    <p>Developed by Divyansh & Hamiz</p>
-    <p>Blueprinted by Vaibhavi & Dhruv</p>
-    <p>&copy; 2025 School Of India, Tech Club</p>
-  </footer>
+  <footer class="credts">
+    <p>
+        Developed by
+        <span onclick="window.open('https://github.com/QuantumNeural')" class="dev">Divyansh</span>
+        and
+        <span class="dev" onclick="window.open('https://github.com/Hamprogrammer', '_blank')">Hamiz</span>
+    </p>
+    <p style="font-size: 0.75rem;">Blueprinted by Art Club</p>
+    <p style="font-size: 0.75rem;">&copy; 2025 School Of India Tech Club</p>
+</footer>
 
 </body>
 

@@ -103,7 +103,7 @@
       margin-top: 8px;
     }
 
-    footer {
+    .credts {
       text-align: center;
       margin-top: 3rem;
       background: #0b2518;
@@ -111,11 +111,28 @@
       border-top: 2px solid #4CCB7B;
     }
 
-    footer p {
+    .credts p {
       font-size: 0.85rem;
       margin: 5px 0;
       color: #caffd5;
     }
+
+    .dev {
+      display: inline-block;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+  .dev::after {
+      font-weight: 550;
+      content: "\2197";
+  }
+
+  .dev:hover {
+      opacity: 0.8;
+      transform: translateY(-1px);
+      text-decoration: underline;
+  }
   </style>
 </head>
 
@@ -165,9 +182,15 @@ Warm Regards,<br>Nelisha</p>
     </div>
   </div>
 
-  <footer>
-    <p>Developed & Designed by Divyansh & Hamiz</p>
-    <p>&copy; 2025 School Of India Tech Club</p>
-  </footer>
+  <footer class="credts">
+    <p>
+        Developed by
+        <span onclick="window.open('https://github.com/QuantumNeural')" class="dev">Divyansh</span>
+        and
+        <span class="dev" onclick="window.open('https://github.com/Hamprogrammer', '_blank')">Hamiz</span>
+    </p>
+    <p style="font-size: 0.75rem;">Blueprinted by Art Club</p>
+    <p style="font-size: 0.75rem;">&copy; 2025 School Of India Tech Club</p>
+</footer>
 </body>
 </html> 
